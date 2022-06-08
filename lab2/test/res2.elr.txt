@@ -1,0 +1,12 @@
+6
+P X T M Q F
+4
+c a * /
+6
+T -> FP
+P -> X | ε
+X -> MFQ
+Q -> X | ε
+M -> * | /
+F -> a | c
+T

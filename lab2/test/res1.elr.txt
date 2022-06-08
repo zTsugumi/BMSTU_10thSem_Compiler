@@ -1,0 +1,15 @@
+9
+T' E Z A' M T B A F
+9
+) - < / * > c ( +
+9
+E -> A | ABA
+Z -> - | +
+M -> * | /
+T -> FT'
+T' -> ε | MFT'
+B -> > | <
+A -> FT'A'
+A' -> ZTA' | ε
+F -> c | (A)
+E

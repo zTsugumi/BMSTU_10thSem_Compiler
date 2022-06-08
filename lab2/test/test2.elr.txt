@@ -1,0 +1,10 @@
+4
+T F X M
+4
+* / a c
+4
+T -> F | FX
+X -> MF | MFX
+M -> * | /
+F -> a | c
+T

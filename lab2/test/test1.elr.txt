@@ -1,0 +1,19 @@
+7
+E A B Z T M F
+9
+c < > + - * / ( )
+7
+E -> ABA | A
+A -> AZT | T
+T -> TMF | F
+F -> c | (A)
+B -> < | >
+Z -> + | -
+M -> * | /
+E
+
+T -> FT'
+T' -> MFT' | eps
+
+A -> FA'
+A' -> ZTA' | eps

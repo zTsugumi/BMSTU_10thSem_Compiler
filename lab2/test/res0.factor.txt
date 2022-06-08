@@ -1,0 +1,9 @@
+3
+E S S'
+5
+i e t b a
+3
+E -> b
+S -> a | iEtSS'
+S' -> eS | ε
+S
