@@ -1,0 +1,30 @@
+# https://cyberzhg.github.io/toolbox/cfg2ll
+#
+# <Program>                 -> <Block>
+# <Block>                   -> { <OperatorList> }
+# <OperatorList>            -> <Operator> <Tail>
+# <Operator>                -> <Identifier> = <Expression> | <Block>
+# <Tail>                    -> ; <Operator> <Tail> | ε
+# <Expression>              -> <AlgebraicExpression> <RelationOperator> <AlgebraicExpression> | <AlgebraicExpression>
+# <AlgebraicExpression>     -> <AlgebraicExpression> <AdditionOperator> <Term> | <Term>
+# <Term>                    -> <Term> <MultiplicationOperator> <Factor> | <Factor>
+# <Factor>                  -> <Identifier> | <Constant> | ( <AlgebraicExpression> )
+# <RelationOperator>        -> < | <= | == | !=' | >= | >
+# <AdditionOperator>        -> + | -
+# <MultiplicationOperator>  -> * | /
+
+# LL-grammar:
+# <Program>                 -> <Block>
+# <Block>                   -> { <OperatorList> }
+# <OperatorList>            -> <Operator> <Tail>
+# <Operator>                -> <Identifier> = <Expression> | <Block>
+# <Tail>                    -> ; <Operator> <Tail> | ε
+# <Expression>              -> <AlgebraicExpression> <Expression'>
+# <Expression'>             -> <RelationOperator> <AlgebraicExpression> | ε
+# <AlgebraicExpression>     -> <Term> <AlgebraicExpression'>
+# <AlgebraicExpression'>    -> <AdditionOperator> <Term> <AlgebraicExpression'> | ε
+# <Term>                    -> <Factor> <Term'>
+# <Term'>                   -> <MultiplicationOperator> <Factor> <Term'> | ε
+# <Factor>                  -> <Identifier> | <NumberConstant> | ( <AlgebraicExpression> )
+
+
