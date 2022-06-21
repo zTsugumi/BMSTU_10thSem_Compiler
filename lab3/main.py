@@ -3,7 +3,7 @@ from my_parser import Parser
 
 
 def main():
-  with open('./test/_test3.txt', 'r') as f:
+  with open('./lab3/test/_test3.txt', 'r') as f:
     src_code = f.read().replace('\n', '')
 
   tokenizer = Tokenizer(src_code)

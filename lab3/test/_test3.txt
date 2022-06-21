@@ -1,5 +1,5 @@
 {
   x = a;
   y = a + (1 / b) - c * d;
-  res = x <= y;
+  res = x <= y
 }

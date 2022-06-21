@@ -1,0 +1,18 @@
+E : A<A
+  | A<=A
+  | A==A
+  | A!=A
+  | A>=A
+  | A>A
+  | A
+A : A+T
+  | A-T
+  | T
+T : T*F
+  | T/F
+  | F
+F : i
+  | c
+  | (A)
+
+

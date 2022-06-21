@@ -1,7 +1,6 @@
-int printf(char *, ...);
-
-int main(int argc, char **argv)
+int main()
 {
-  printf("%d", argc);
+  int temp = 10;
+  printf("%d", temp);
   return 0;
 }
